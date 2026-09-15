@@ -9,10 +9,11 @@ Earlier changes are recorded in the workspace [`CHANGELOG.md`](../CHANGELOG.md).
 
 ## [Unreleased]
 
-### Fixed
+## [0.3.2] - 2026-09-15
 
-- **Breaking:** `subscribe` requires the handler to handle the event it is registered under. A mismatch used to compile, fail its downcast at publish time, and be swallowed by the default `continue_on_error` — so the handler silently never ran and the publisher saw success.
-- **Breaking:** `publish` returns a `PublishReport` with invoked and failed handler counts.
+### Changed
+
+- Dependencies bumped to their latest releases: `tokio` 1.52 → 1.53, `uuid` 1.23 → 1.26.
 
 ## [0.3.1] - 2026-08-04
 
